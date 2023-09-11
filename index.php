@@ -55,7 +55,7 @@
             </div>
         </header>
         <!-- About-->
-        <?php include_once 'https://bido101.github.io/ImHarvzBue.github.io/dashboard_components/profile_about.php'; ?>
+        <?php include 'https://bido101.github.io/ImHarvzBue.github.io/dashboard_components/profile_about.php'; ?>
         <!-- accomplishment -->
         <?php include_once 'https://bido101.github.io/ImHarvzBue.github.io/dashboard_components/accomplishment_section.php'; ?>
         <!-- skills and experience-->
