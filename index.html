@@ -12,7 +12,7 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand">[Your Name]</div>
+      <div class="brand">Harvey A. Buena</div>
       <nav class="nav">
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
@@ -39,19 +39,20 @@
         </div>
         <div class="hero-visual">
           <svg viewBox="0 0 600 400" class="hero-art" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
-            <defs>
-              <linearGradient id="g1" x1="0" x2="1">
-                <stop offset="0" stop-color="#0EA5E9" />
-                <stop offset="1" stop-color="#7C3AED" />
-              </linearGradient>
-            </defs>
-            <rect x="0" y="0" width="600" height="400" rx="20" fill="#0F172A" />
-            <g transform="translate(40,40)">
-              <rect x="0" y="0" width="520" height="320" rx="12" fill="#0B1220" opacity="0.4"/>
-              <circle cx="120" cy="80" r="60" fill="url(#g1)" opacity="0.9" />
-              <rect x="220" y="40" width="260" height="200" rx="12" fill="#122235" opacity="0.6" />
-            </g>
-          </svg>
+          <defs>
+            <pattern id="g1" x="0" y="0" width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+              <image href="assets/profile-pic.jpg" 
+                    width="100" height="100" />
+            </pattern>
+          </defs>
+
+          <rect x="0" y="0" width="600" height="400" rx="20" fill="#0F172A" />
+          <g transform="translate(40,40)">
+            <rect x="0" y="0" width="520" height="320" rx="12" fill="#0B1220" opacity="0.4"/>
+            <circle cx="120" cy="80" r="60" fill="url(#g1)" opacity="0.9" />
+            <rect x="220" y="40" width="260" height="200" rx="12" fill="#122235" opacity="0.6" />
+          </g>
+        </svg>
         </div>
       </div>
     </section>
