@@ -48,7 +48,9 @@ body{
 .section-title{font-size:20px;margin:0 0 8px}
 .section-lead{color:var(--muted);margin:0 0 20px}
 .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.tech{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:12px;border-radius:10px;text-align:center;color:var(--text);font-weight:600;border:1px solid rgba(255,255,255,0.03)}
+.tech{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:16px 12px;border-radius:10px;text-align:center;color:var(--text);font-weight:600;border:1px solid rgba(255,255,255,0.03);display:flex;flex-direction:column;align-items:center;gap:10px;transition:border-color 0.2s}
+.tech i{font-size:24px;color:var(--accent);display:inline-block;min-width:1em;text-align:center}
+.tech:hover{border-color:rgba(56,189,248,0.4)}
 
 /* Projects */
 .projects{padding:48px 0}
