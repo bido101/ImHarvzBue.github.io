@@ -9,6 +9,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Enhanced hover effects for technical skills */
+    .tech {
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .tech i {
+      transition: color 0.3s ease;
+    }
+    .tech:hover {
+      transform: translateY(-5px);
+      background-color: #38BDF8;
+      color: #0F172A;
+      box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2);
+    }
+    .tech:hover i {
+      color: #0F172A;
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -105,88 +123,92 @@
       <h2 class="section-title">Project Gallery</h2>
       <p class="section-lead">Problem → Solution → Result — each project focuses on measurable impact.</p>
 
-      <div class="projects-grid">
+      <div class="carousel-wrapper">
+        <button class="carousel-control prev" id="prevBtn" aria-label="Previous project"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="projects-grid">
+          
+          <article class="project-card">
+            <div class="project-media">
+              <div class="project-image" aria-hidden="false">
+                <!-- Replace the file at assets/system-screenshot.png with your provided screenshot -->
+                <img src="./assets/373395166_237829302584287_5486955021885840940_n.jpg" alt="System screenshot" class="project-screenshot">
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">HiBes</h3>
+              <p class="psr">
+                An On-Demand Multi-Service Marketplace Platform 
+                (similar in structural blueprint to hyperlocal apps like Grab, TaskRabbit, or Rappi, but tailored for regional or emerging markets).
+              </p>
+              <div class="badges">
+                <span class="badge">Laravel Framework v8</span>
+                <span class="badge">PHP</span>
+                <span class="badge">Boostrap</span>
+                <span class="badge">Javascript</span>
+              </div>
+              <div class="project-links">
+                <a class="btn-link" href="#" aria-label="Live demo">Live Demo</a>
+                <a class="btn-outline" href="#" aria-label="GitHub repository">GitHub</a>
+              </div>
+            </div>
+          </article>
 
-        <article class="project-card">
-          <div class="project-media">
-            <div class="project-image" aria-hidden="false">
-              <!-- Replace the file at assets/system-screenshot.png with your provided screenshot -->
-              <img src="./assets/373395166_237829302584287_5486955021885840940_n.jpg" alt="System screenshot" class="project-screenshot">
+          <article class="project-card">
+            <div class="project-media">
+              <div class="project-image" aria-hidden="false">
+                <!-- Replace the file at assets/system-screenshot.png with your provided screenshot -->
+                <img src="./assets/Screenshot 2023-09-07 150432.png" alt="System screenshot" class="project-screenshot">
+              </div>
             </div>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">HiBes</h3>
-            <p class="psr">
-              An On-Demand Multi-Service Marketplace Platform 
-              (similar in structural blueprint to hyperlocal apps like Grab, TaskRabbit, or Rappi, but tailored for regional or emerging markets).
-            </p>
-            <div class="badges">
-              <span class="badge">Laravel Framework v8</span>
-              <span class="badge">PHP</span>
-              <span class="badge">Boostrap</span>
-              <span class="badge">Javascript</span>
+            <div class="project-body">
+              <h3 class="project-title">Villaconzoilo Farm School System</h3>
+              <p class="psr">
+                A Web Application that has an Booking and ordering systen with payment method gateway (Paypal) and enrollment system. 
+              </p>
+              <div class="badges">
+                <span class="badge">Codeigniter v3</span>
+                <span class="badge">PHP</span>
+                <span class="badge">Javascript</span>
+                <span class="badge">Payment Method Gateway (Paypal)</span>
+              </div>
+              <div class="project-links">
+                <a class="btn-link" href="#">Live Demo</a>
+                <a class="btn-outline" href="#">GitHub</a>
+              </div>
             </div>
-            <div class="project-links">
-              <a class="btn-link" href="#" aria-label="Live demo">Live Demo</a>
-              <a class="btn-outline" href="#" aria-label="GitHub repository">GitHub</a>
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="project-card">
-          <div class="project-media">
-            <div class="project-image" aria-hidden="false">
-              <!-- Replace the file at assets/system-screenshot.png with your provided screenshot -->
-              <img src="./assets/Screenshot 2023-09-07 150432.png" alt="System screenshot" class="project-screenshot">
+          <article class="project-card">
+            <div class="project-media">
+              <div class="project-image" aria-hidden="false">
+                <!-- Replace the file at assets/system-screenshot.png with your provided screenshot -->
+                <img src="./assets/Screenshot 2023-09-09 075053.png" alt="System screenshot" class="project-screenshot">
+              </div>
             </div>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Villaconzoilo Farm School System</h3>
-            <p class="psr">
-              A Web Application that has an Booking and ordering systen with payment method gateway (Paypal) and enrollment system. 
-            </p>
-            <div class="badges">
-              <span class="badge">Codeigniter v3</span>
-              <span class="badge">PHP</span>
-              <span class="badge">Javascript</span>
-              <span class="badge">Payment Method Gateway (Paypal)</span>
+            <div class="project-body">
+              <h3 class="project-title">PUP Taguige - Online Document Requests</h3>
+              <p class="psr">
+                <strong>Problem:</strong> 
+                Manual data ops causing delays. 
+                <strong>Solution:</strong> 
+                Built resilient ETL with retries, monitoring, and schema validation. 
+                <strong>Result:</strong> 
+                99.9% uptime and daily jobs reduced from hours to minutes.
+              </p>
+              <div class="badges">
+                <span class="badge">Python</span>
+                <span class="badge">Airflow</span>
+                <span class="badge">Postgres</span>
+              </div>
+              <div class="project-links">
+                <a class="btn-link" href="#">Live Demo</a>
+                <a class="btn-outline" href="#">GitHub</a>
+              </div>
             </div>
-            <div class="project-links">
-              <a class="btn-link" href="#">Live Demo</a>
-              <a class="btn-outline" href="#">GitHub</a>
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="project-card">
-          <div class="project-media">
-            <div class="project-image" aria-hidden="false">
-              <!-- Replace the file at assets/system-screenshot.png with your provided screenshot -->
-              <img src="./assets/Screenshot 2023-09-09 075053.png" alt="System screenshot" class="project-screenshot">
-            </div>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">PUP Taguige - Online Document Requests</h3>
-            <p class="psr">
-              <strong>Problem:</strong> 
-              Manual data ops causing delays. 
-              <strong>Solution:</strong> 
-              Built resilient ETL with retries, monitoring, and schema validation. 
-              <strong>Result:</strong> 
-              99.9% uptime and daily jobs reduced from hours to minutes.
-            </p>
-            <div class="badges">
-              <span class="badge">Python</span>
-              <span class="badge">Airflow</span>
-              <span class="badge">Postgres</span>
-            </div>
-            <div class="project-links">
-              <a class="btn-link" href="#">Live Demo</a>
-              <a class="btn-outline" href="#">GitHub</a>
-            </div>
-          </div>
-        </article>
-
+        </div>
+        <button class="carousel-control next" id="nextBtn" aria-label="Next project"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
     </section>
 
